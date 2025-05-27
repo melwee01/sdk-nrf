@@ -480,7 +480,9 @@ Gazell libraries
 Security libraries
 ------------------
 
-|no_changes_yet_note|
+* :ref:`nrf_security` library:
+
+  * Updated the :ref:`nrf_security_driver_config` ECC curve support table to specify CRACEN support for TLS 1.2 PRF and TLS 1.2 PSK to MS, and that Curve448 is not supported for CRACEN.
 
 Modem libraries
 ---------------

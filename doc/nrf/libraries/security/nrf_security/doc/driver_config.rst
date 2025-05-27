@@ -312,9 +312,9 @@ The following table shows key derivation function (KDF) support for each driver:
 +------------------------------+--------------------------+----------------------------+---------------------------+
 | PBKDF2-AES-CMAC-PRF-128      | Not supported            | Supported                  | Supported                 |
 +------------------------------+--------------------------+----------------------------+---------------------------+
-| TLS 1.2 PRF                  | Not supported            | Supported                  | Not Supported             |
+| TLS 1.2 PRF                  | Not supported            | Supported                  | Supported                 |
 +------------------------------+--------------------------+----------------------------+---------------------------+
-| TLS 1.2 PSK to MS            | Not supported            | Supported                  | Not Supported             |
+| TLS 1.2 PSK to MS            | Not supported            | Supported                  | Supported                 |
 +------------------------------+--------------------------+----------------------------+---------------------------+
 | TLS 1.2 EC J-PAKE to PMS     | Not supported            | Supported                  | Supported                 |
 +------------------------------+--------------------------+----------------------------+---------------------------+
@@ -352,7 +352,7 @@ The following table shows MAC algorithm support for each driver:
 +----------------+--------------------------+----------------------------+---------------------------+
 | HMAC           | Supported                | Supported                  | Supported                 |
 +----------------+--------------------------+----------------------------+---------------------------+
-| CBC-MAC        | Not supported            | Not supported              | Not  Supported            |
+| CBC-MAC        | Not supported            | Not supported              | Not supported             |
 +----------------+--------------------------+----------------------------+---------------------------+
 
 The Kconfig option :kconfig:option:`CONFIG_PSA_USE_CC3XX_MAC_DRIVER` enables the :ref:`nrf_security_drivers_cc3xx` for all supported algorithms.
@@ -461,11 +461,11 @@ The following table shows asymmetric signature algorithm support for each driver
 +---------------------------------+---------------------------+----------------------------+---------------------------+
 | RSA PKCS#1 v1.5 sign            | Supported                 | Supported                  | Supported                 |
 +---------------------------------+---------------------------+----------------------------+---------------------------+
-| RSA raw PKCS#1 v1.5 sign        | Supported                 | Supported                  | Not Supported             |
+| RSA raw PKCS#1 v1.5 sign        | Supported                 | Supported                  | Not supported             |
 +---------------------------------+---------------------------+----------------------------+---------------------------+
 | RSA PSS                         | Not supported             | Supported                  | Supported                 |
 +---------------------------------+---------------------------+----------------------------+---------------------------+
-| RSA PSS any salt                | Not supported             | Supported                  | Not Supported             |
+| RSA PSS any salt                | Not supported             | Supported                  | Not supported             |
 +---------------------------------+---------------------------+----------------------------+---------------------------+
 
 The Kconfig option :kconfig:option:`CONFIG_PSA_USE_CC3XX_ASYMMETRIC_SIGNATURE_DRIVER` enables the driver :ref:`nrf_security_drivers_cc3xx` for all supported algorithms.
@@ -621,7 +621,7 @@ The following table shows ECC curve support for each driver:
 +--------------------------+---------------------------+----------------------------+---------------------------+
 | Curve25519 (X25519)      | Supported                 | Supported                  | Supported                 |
 +--------------------------+---------------------------+----------------------------+---------------------------+
-| Curve448 (X448)          | Not supported             | Not supported              | Supported                 |
+| Curve448 (X448)          | Not supported             | Not supported              | Not supported             |
 +--------------------------+---------------------------+----------------------------+---------------------------+
 | Edwards25519 (Ed25519)   | Supported                 | Supported                  | Supported                 |
 +--------------------------+---------------------------+----------------------------+---------------------------+
